@@ -10,4 +10,4 @@ program.command('init <name>')
   .action(require('../lib/init'));
 
 //process当前进程 ，argv执行当前进程的参数
-program.parse(process.argv)
+program.parse(process.argv);

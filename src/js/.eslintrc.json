@@ -1,0 +1,46 @@
+{
+	"rules": {
+		"react/jsx-uses-react": "error",
+		"indent": ["error", 2, { "SwitchCase": 1 }],
+		"quotes": [2, "double"],
+		"linebreak-style": [2, "unix"],
+		"semi": [2, "always"],
+		"react/no-find-dom-node": "off",
+		"no-debugger": [1]
+	},
+
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true,
+		"jest": true
+	},
+	"parser": "babel-eslint",
+	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+	"plugins": ["react"],
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"experimentalObjectRestSpread": true,
+			"arrowFunctions": true,
+			"objectLiteralShorthandMethods": true
+		}
+	},
+	"globals": {
+		"API_URL": "readonly",
+		"AUTH_URL": "readonly",
+		"APP_ENV": "readonly",
+		"WAMS_URL": "readonly",
+		"__webpack_public_path__": "readonly",
+		"MGR_URL": "readonly",
+		"GIVE_URL": "readonly",
+		"TEMPLATE_URL": "readonly"
+	}
+}
